@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" initiat-scale=1.0>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Which chocolate is the most popular?</title>
+    <style>
+        h1 {
+            font-size: 28px;
+            font-family: "Monaco";
+            color: #2F4F4F;
+            text-align: center;
+        }
+
+        body {
+            background-image: url(img/cakes.jpg);
+            background-size: 100%;
+            background-attachment: fixed;
+        }
+
+        fieldset {
+            padding: 20px;
+            margin: 0px 400px 0px 400px;
+        }
+
+        legend {
+            font-size: 20px;
+        }
+
+        img {
+            margin: 20px 20px 20px 20px;
+        }
+
+        textarea {
+            width: 400px;
+            height: 50px;
+            background: transparent;
+            margin-left: 35px;
+            margin-right: 20px;
+            margin-top: 15px;
+        }
+
+
+
+        input[type="submit"] {
+          width: 100px;
+            height: 40px;
+            background: #FF6A6A;
+            margin-bottom: 150px;
+            margin-left: 600px;
+        }
+           
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Which chocolate is the most popular?</h1>
+    <form method="POST" action="https://formspree.io/iwanusa27@gmail.com">
+        <fieldset>
+
+            <legend align="center">Your personal information.</legend>
+            <label for="client-name">Name:</label>
+            <input type="text" name="client-name" placeholder="Your name" id="client-name">
+            <br>
+            <label for="client-surname">Surname:</label>
+            <input type="text" name="client-surname" placeholder="Your surname" id="client-surname"><br> Gender:
+            <select name="sex">
+				<option value="feminine">Feminine</option>
+				<option value="male">Male</option>
+			</select><br> Age:
+            <select name="age">
+		    <option value="to18">up to 18 years old</option>
+		    <option value="to25">18-25 years old</option>
+		    <option value="to40">26-40 years old</option>
+		    <option value="to55">41-55 years old</option>
+		    <option value="more55">more than 55 years old</option>
+		 </select>
+            <br> Specify your marital status:
+            <select name="maritel">
+            <option value="married">Married</option>
+            <option value="single">Single</option>
+        </select><br>
+
+            <label for="client-email">E-Mail:</table>
+			<input type="email" name="client-email" placeholder="Your E-Mail" id="client-email">
+			<br>
+			<label for="client-phone"> Phone number:</label>
+            <input type="tel" name="client-phone" placeholder="Your phone number" id="client-phone">
+            <br>
+        </fieldset>
+
+        <h1>Your relationship with the chocolate.</h1>
+        <fieldset>
+            <img src="img/hungry.jpg" alt="hungry" idth="120" height="90">
+            <img src="img/women.jpg" alt="women" idth="110" height="90">
+            <img src="img/baby.jpg" alt="baby" idth="110" height="90">
+            <br>
+            <input type="radio" name="question-one" value="love">I love you!
+            <input type="radio" name="question-one" value="good!">Good!
+            <input type="radio" name="question-one" value="neutral!">Neutral!
+        </fieldset>
+        
+        <h1>What kinds of chocolate do you prefer?</h1>
+        <fieldset>
+            <input type="radio" name="question-two" value="bitter" style="width:5%">Black bitter chocolate.<br>
+            <input type="radio" name="question-two" value="dessert" style="width:5%">Black dessert chocolate.<br>
+            <input type="radio" name="question-two" value="milk" style="width:5%">Milk chocolate.<br>
+            <input type="radio" name="question-two" value="white" style="width:5%">White chocolate.<br>
+            <input type="radio" name="question-two" value="porous" style="width:5%">Porous chocolate.<br>
+            <input type="radio" name="question-two" value="diabetic" style="width:5%">Diabetic chocolate.<br>
+        </fieldset>
+
+        <h1>What brands of chocolate do you prefer?</h1>
+        <fieldset>
+            <input type="radio" name="question-three" value="roshen" style="width:5%">Roshen<br>
+            <input type="radio" name="question-three" value="milka" style="width:5%">Milka<br>
+            <input type="radio" name="question-three" value="nestle" style="width:5%">Nestle<br>
+            <input type="radio" name="question-three" value="svitoch" style="width:5%">Svitoch<br>
+            <input type="radio" name="question-three" value="option1" style="width:5%">Your option<br>
+            <br>
+            <textarea name="comment1" id="comment1-field">Write your answer here</textarea>
+        </fieldset>
+
+        <h1>Which chocolate fillings do you like the most?</h1>
+        <fieldset>
+            <input type="radio" name="question-four" value="nuts" style="width:5%">Nuts<br>
+            <input type="radio" name="question-four" value="raisins" style="width:5%">Raisins<br>
+            <input type="radio" name="question-four" value="jam" style="width:5%">Jam<br>
+            <input type="radio" name="question-four" value="liqueur" style="width:5%">Liqueur<br>
+            <input type="radio" name="question-four" value="stuffing" style="width:5%">Without stuffing<br>
+            <input type="radio" name="question-four" value="option2" style="width:5%">Your option<br>
+            <br>
+            <textarea name="comment2" id="comment2-field">Write your answer here</textarea>
+        </fieldset>
+
+        <h1>Does caloric content of chocolate matter to you?</h1>
+        <fieldset>
+            <input type="radio" name="quastion-five" value="yes" style="width:5%">Yes
+            <input type="radio" name="quastion-five" value="no" style="width:5%">No
+        </fieldset>
+
+        <h1>For what purpose do you buy chocolate?</h1>
+        <fieldset>
+            <textarea name="comment3" id="comment3-field">Write your answer here</textarea>
+        </fieldset>
+
+        <h1>How many times a week do you buy chocolate?</h1>
+        <fieldset>
+            <input type="radio" name="quastion-six" value="totree" style="width:5%">up to 3 times<br>
+            <input type="radio" name="quastion-six" value="tosix" style="width:5%">3-6 times<br>
+            <input type="radio" name="quastion-six" value="moresix" style="width:5%">more than 6 times<br>
+        </fieldset>
+
+        <h1>Is the appearance of a product important to you?</h1>
+        <fieldset>
+            <input type="radio" name="quastion-seven" value="yes" style="width:5%">Yes
+            <input type="radio" name="quastion-seven" value="no" style="width:5%">No
+        </fieldset>
+
+        <h1>Does chocolate affect your mood?</h1>
+        <fieldset>
+            <input type="radio" name="quastion-eight" value="yes" style="width:5%">Yes
+            <input type="radio" name="quastion-eight" value="no" style="width:5%">No
+        </fieldset>
+
+        <h1>We thank you for your answers.<br>To end the survey, please press "Send".</h1><br>
+        <input type="submit" value="Send">
+
+    </form>
+</body>
+
+</html>
